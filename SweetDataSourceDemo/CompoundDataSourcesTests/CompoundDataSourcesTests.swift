@@ -1,15 +1,15 @@
 //
-//  SweetDataSourceTests.swift
-//  SweetDataSourceTests
+//  CompoundDataSourcesTests.swift
+//  CompoundDataSourcesTests
 //
 //  Created by Ellen Shapiro (Work) on 4/20/18.
 //  Copyright © 2018 Bakken & Bæck. All rights reserved.
 //
 
 import XCTest
-@testable import SweetDataSource
+@testable import CompoundDataSources
 
-class SweetDataSourceTests: XCTestCase {
+class CompoundDataSourcesTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -12,23 +12,15 @@
 		331042CA208A1C40009A3A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331042C8208A1C40009A3A2D /* Main.storyboard */; };
 		331042CC208A1C42009A3A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331042CB208A1C42009A3A2D /* Assets.xcassets */; };
 		331042CF208A1C42009A3A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331042CD208A1C42009A3A2D /* LaunchScreen.storyboard */; };
-		331042E5208A1C42009A3A2D /* SweetDataSourceDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331042E4208A1C42009A3A2D /* SweetDataSourceDemoUITests.swift */; };
-		33104300208A1C5F009A3A2D /* SweetDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331042F7208A1C5F009A3A2D /* SweetDataSource.framework */; };
-		33104307208A1C5F009A3A2D /* SweetDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33104306208A1C5F009A3A2D /* SweetDataSourceTests.swift */; };
-		33104309208A1C5F009A3A2D /* SweetDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 331042F9208A1C5F009A3A2D /* SweetDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3310430C208A1C5F009A3A2D /* SweetDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331042F7208A1C5F009A3A2D /* SweetDataSource.framework */; };
-		3310430D208A1C5F009A3A2D /* SweetDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 331042F7208A1C5F009A3A2D /* SweetDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33104300208A1C5F009A3A2D /* CompoundDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331042F7208A1C5F009A3A2D /* CompoundDataSources.framework */; };
+		33104307208A1C5F009A3A2D /* CompoundDataSourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33104306208A1C5F009A3A2D /* CompoundDataSourcesTests.swift */; };
+		33104309208A1C5F009A3A2D /* CompoundDataSources.h in Headers */ = {isa = PBXBuildFile; fileRef = 331042F9208A1C5F009A3A2D /* CompoundDataSources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3310430C208A1C5F009A3A2D /* CompoundDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331042F7208A1C5F009A3A2D /* CompoundDataSources.framework */; };
+		3310430D208A1C5F009A3A2D /* CompoundDataSources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 331042F7208A1C5F009A3A2D /* CompoundDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33104319208A1CF1009A3A2D /* DemoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33104318208A1CF1009A3A2D /* DemoItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		331042E1208A1C42009A3A2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 331042B9208A1C40009A3A2D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 331042C0208A1C40009A3A2D;
-			remoteInfo = SweetDataSourceDemo;
-		};
 		33104301208A1C5F009A3A2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 331042B9208A1C40009A3A2D /* Project object */;
@@ -59,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3310430D208A1C5F009A3A2D /* SweetDataSource.framework in Embed Frameworks */,
+				3310430D208A1C5F009A3A2D /* CompoundDataSources.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,23 +59,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		331042C1208A1C40009A3A2D /* SweetDataSourceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetDataSourceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		331042C1208A1C40009A3A2D /* DataSourcesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataSourcesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		331042C4208A1C40009A3A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		331042C6208A1C40009A3A2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		331042C9208A1C40009A3A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		331042CB208A1C42009A3A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		331042CE208A1C42009A3A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		331042D0208A1C42009A3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		331042D9208A1C42009A3A2D /* SweetDataSourceDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetDataSourceDemoTests.swift; sourceTree = "<group>"; };
-		331042DB208A1C42009A3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		331042E0208A1C42009A3A2D /* SweetDataSourceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetDataSourceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		331042E4208A1C42009A3A2D /* SweetDataSourceDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetDataSourceDemoUITests.swift; sourceTree = "<group>"; };
-		331042E6208A1C42009A3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		331042F7208A1C5F009A3A2D /* SweetDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		331042F9208A1C5F009A3A2D /* SweetDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweetDataSource.h; sourceTree = "<group>"; };
+		331042F7208A1C5F009A3A2D /* CompoundDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CompoundDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		331042F9208A1C5F009A3A2D /* CompoundDataSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompoundDataSources.h; sourceTree = "<group>"; };
 		331042FA208A1C5F009A3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		331042FF208A1C5F009A3A2D /* SweetDataSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetDataSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		33104306208A1C5F009A3A2D /* SweetDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetDataSourceTests.swift; sourceTree = "<group>"; };
+		331042FF208A1C5F009A3A2D /* CompoundDataSourcesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompoundDataSourcesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33104306208A1C5F009A3A2D /* CompoundDataSourcesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundDataSourcesTests.swift; sourceTree = "<group>"; };
 		33104308208A1C5F009A3A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33104318208A1CF1009A3A2D /* DemoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,14 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3310430C208A1C5F009A3A2D /* SweetDataSource.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		331042DD208A1C42009A3A2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3310430C208A1C5F009A3A2D /* CompoundDataSources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33104300208A1C5F009A3A2D /* SweetDataSource.framework in Frameworks */,
+				33104300208A1C5F009A3A2D /* CompoundDataSources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,11 +105,9 @@
 		331042B8208A1C40009A3A2D = {
 			isa = PBXGroup;
 			children = (
-				331042C3208A1C40009A3A2D /* SweetDataSourceDemo */,
-				331042D8208A1C42009A3A2D /* SweetDataSourceDemoTests */,
-				331042E3208A1C42009A3A2D /* SweetDataSourceDemoUITests */,
-				331042F8208A1C5F009A3A2D /* SweetDataSource */,
-				33104305208A1C5F009A3A2D /* SweetDataSourceTests */,
+				331042C3208A1C40009A3A2D /* DataSourcesDemo */,
+				331042F8208A1C5F009A3A2D /* CompoundDataSources */,
+				33104305208A1C5F009A3A2D /* CompoundDataSourcesTests */,
 				331042C2208A1C40009A3A2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,20 +115,17 @@
 		331042C2208A1C40009A3A2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				331042C1208A1C40009A3A2D /* SweetDataSourceDemo.app */,
-				331042E0208A1C42009A3A2D /* SweetDataSourceDemoUITests.xctest */,
-				331042F7208A1C5F009A3A2D /* SweetDataSource.framework */,
-				331042FF208A1C5F009A3A2D /* SweetDataSourceTests.xctest */,
+				331042C1208A1C40009A3A2D /* DataSourcesDemo.app */,
+				331042F7208A1C5F009A3A2D /* CompoundDataSources.framework */,
+				331042FF208A1C5F009A3A2D /* CompoundDataSourcesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		331042C3208A1C40009A3A2D /* SweetDataSourceDemo */ = {
+		331042C3208A1C40009A3A2D /* DataSourcesDemo */ = {
 			isa = PBXGroup;
 			children = (
 				33104315208A1CD2009A3A2D /* Cells */,
-				3310431B208A1DA5009A3A2D /* Extensions */,
-				33104316208A1CD2009A3A2D /* DataSources */,
 				33104317208A1CD2009A3A2D /* ViewControllers */,
 				331042C4208A1C40009A3A2D /* AppDelegate.swift */,
 				331042C8208A1C40009A3A2D /* Main.storyboard */,
@@ -158,44 +133,25 @@
 				331042CD208A1C42009A3A2D /* LaunchScreen.storyboard */,
 				331042D0208A1C42009A3A2D /* Info.plist */,
 			);
-			path = SweetDataSourceDemo;
+			path = DataSourcesDemo;
 			sourceTree = "<group>";
 		};
-		331042D8208A1C42009A3A2D /* SweetDataSourceDemoTests */ = {
+		331042F8208A1C5F009A3A2D /* CompoundDataSources */ = {
 			isa = PBXGroup;
 			children = (
-				331042D9208A1C42009A3A2D /* SweetDataSourceDemoTests.swift */,
-				331042DB208A1C42009A3A2D /* Info.plist */,
-			);
-			path = SweetDataSourceDemoTests;
-			sourceTree = "<group>";
-		};
-		331042E3208A1C42009A3A2D /* SweetDataSourceDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				331042E4208A1C42009A3A2D /* SweetDataSourceDemoUITests.swift */,
-				331042E6208A1C42009A3A2D /* Info.plist */,
-			);
-			path = SweetDataSourceDemoUITests;
-			sourceTree = "<group>";
-		};
-		331042F8208A1C5F009A3A2D /* SweetDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				3310431A208A1D18009A3A2D /* Extensions */,
-				331042F9208A1C5F009A3A2D /* SweetDataSource.h */,
+				331042F9208A1C5F009A3A2D /* CompoundDataSources.h */,
 				331042FA208A1C5F009A3A2D /* Info.plist */,
 			);
-			path = SweetDataSource;
+			path = CompoundDataSources;
 			sourceTree = "<group>";
 		};
-		33104305208A1C5F009A3A2D /* SweetDataSourceTests */ = {
+		33104305208A1C5F009A3A2D /* CompoundDataSourcesTests */ = {
 			isa = PBXGroup;
 			children = (
-				33104306208A1C5F009A3A2D /* SweetDataSourceTests.swift */,
+				33104306208A1C5F009A3A2D /* CompoundDataSourcesTests.swift */,
 				33104308208A1C5F009A3A2D /* Info.plist */,
 			);
-			path = SweetDataSourceTests;
+			path = CompoundDataSourcesTests;
 			sourceTree = "<group>";
 		};
 		33104315208A1CD2009A3A2D /* Cells */ = {
@@ -206,33 +162,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		33104316208A1CD2009A3A2D /* DataSources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataSources;
-			sourceTree = "<group>";
-		};
 		33104317208A1CD2009A3A2D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				331042C6208A1C40009A3A2D /* ViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		3310431A208A1D18009A3A2D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		3310431B208A1DA5009A3A2D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,16 +177,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33104309208A1C5F009A3A2D /* SweetDataSource.h in Headers */,
+				33104309208A1C5F009A3A2D /* CompoundDataSources.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		331042C0208A1C40009A3A2D /* SweetDataSourceDemo */ = {
+		331042C0208A1C40009A3A2D /* DataSourcesDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 331042E9208A1C42009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSourceDemo" */;
+			buildConfigurationList = 331042E9208A1C42009A3A2D /* Build configuration list for PBXNativeTarget "DataSourcesDemo" */;
 			buildPhases = (
 				331042BD208A1C40009A3A2D /* Sources */,
 				331042BE208A1C40009A3A2D /* Frameworks */,
@@ -263,32 +198,14 @@
 			dependencies = (
 				3310430B208A1C5F009A3A2D /* PBXTargetDependency */,
 			);
-			name = SweetDataSourceDemo;
+			name = DataSourcesDemo;
 			productName = SweetDataSourceDemo;
-			productReference = 331042C1208A1C40009A3A2D /* SweetDataSourceDemo.app */;
+			productReference = 331042C1208A1C40009A3A2D /* DataSourcesDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		331042DF208A1C42009A3A2D /* SweetDataSourceDemoUITests */ = {
+		331042F6208A1C5F009A3A2D /* CompoundDataSources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 331042EF208A1C42009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSourceDemoUITests" */;
-			buildPhases = (
-				331042DC208A1C42009A3A2D /* Sources */,
-				331042DD208A1C42009A3A2D /* Frameworks */,
-				331042DE208A1C42009A3A2D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				331042E2208A1C42009A3A2D /* PBXTargetDependency */,
-			);
-			name = SweetDataSourceDemoUITests;
-			productName = SweetDataSourceDemoUITests;
-			productReference = 331042E0208A1C42009A3A2D /* SweetDataSourceDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		331042F6208A1C5F009A3A2D /* SweetDataSource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3310430E208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSource" */;
+			buildConfigurationList = 3310430E208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "CompoundDataSources" */;
 			buildPhases = (
 				331042F2208A1C5F009A3A2D /* Sources */,
 				331042F3208A1C5F009A3A2D /* Frameworks */,
@@ -299,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = SweetDataSource;
+			name = CompoundDataSources;
 			productName = SweetDataSource;
-			productReference = 331042F7208A1C5F009A3A2D /* SweetDataSource.framework */;
+			productReference = 331042F7208A1C5F009A3A2D /* CompoundDataSources.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		331042FE208A1C5F009A3A2D /* SweetDataSourceTests */ = {
+		331042FE208A1C5F009A3A2D /* CompoundDataSourcesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33104312208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSourceTests" */;
+			buildConfigurationList = 33104312208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "CompoundDataSourcesTests" */;
 			buildPhases = (
 				331042FB208A1C5F009A3A2D /* Sources */,
 				331042FC208A1C5F009A3A2D /* Frameworks */,
@@ -318,9 +235,9 @@
 				33104302208A1C5F009A3A2D /* PBXTargetDependency */,
 				33104304208A1C5F009A3A2D /* PBXTargetDependency */,
 			);
-			name = SweetDataSourceTests;
+			name = CompoundDataSourcesTests;
 			productName = SweetDataSourceTests;
-			productReference = 331042FF208A1C5F009A3A2D /* SweetDataSourceTests.xctest */;
+			productReference = 331042FF208A1C5F009A3A2D /* CompoundDataSourcesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -336,10 +253,6 @@
 					331042C0208A1C40009A3A2D = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					331042DF208A1C42009A3A2D = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 331042C0208A1C40009A3A2D;
-					};
 					331042F6208A1C5F009A3A2D = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -349,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 331042BC208A1C40009A3A2D /* Build configuration list for PBXProject "SweetDataSourceDemo" */;
+			buildConfigurationList = 331042BC208A1C40009A3A2D /* Build configuration list for PBXProject "DataSourcesDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -362,10 +275,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				331042C0208A1C40009A3A2D /* SweetDataSourceDemo */,
-				331042DF208A1C42009A3A2D /* SweetDataSourceDemoUITests */,
-				331042F6208A1C5F009A3A2D /* SweetDataSource */,
-				331042FE208A1C5F009A3A2D /* SweetDataSourceTests */,
+				331042C0208A1C40009A3A2D /* DataSourcesDemo */,
+				331042F6208A1C5F009A3A2D /* CompoundDataSources */,
+				331042FE208A1C5F009A3A2D /* CompoundDataSourcesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -378,13 +290,6 @@
 				331042CF208A1C42009A3A2D /* LaunchScreen.storyboard in Resources */,
 				331042CC208A1C42009A3A2D /* Assets.xcassets in Resources */,
 				331042CA208A1C40009A3A2D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		331042DE208A1C42009A3A2D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,14 +320,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		331042DC208A1C42009A3A2D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				331042E5208A1C42009A3A2D /* SweetDataSourceDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		331042F2208A1C5F009A3A2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,31 +331,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33104307208A1C5F009A3A2D /* SweetDataSourceTests.swift in Sources */,
+				33104307208A1C5F009A3A2D /* CompoundDataSourcesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		331042E2208A1C42009A3A2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 331042C0208A1C40009A3A2D /* SweetDataSourceDemo */;
-			targetProxy = 331042E1208A1C42009A3A2D /* PBXContainerItemProxy */;
-		};
 		33104302208A1C5F009A3A2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 331042F6208A1C5F009A3A2D /* SweetDataSource */;
+			target = 331042F6208A1C5F009A3A2D /* CompoundDataSources */;
 			targetProxy = 33104301208A1C5F009A3A2D /* PBXContainerItemProxy */;
 		};
 		33104304208A1C5F009A3A2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 331042C0208A1C40009A3A2D /* SweetDataSourceDemo */;
+			target = 331042C0208A1C40009A3A2D /* DataSourcesDemo */;
 			targetProxy = 33104303208A1C5F009A3A2D /* PBXContainerItemProxy */;
 		};
 		3310430B208A1C5F009A3A2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 331042F6208A1C5F009A3A2D /* SweetDataSource */;
+			target = 331042F6208A1C5F009A3A2D /* CompoundDataSources */;
 			targetProxy = 3310430A208A1C5F009A3A2D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -602,12 +494,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SweetDataSourceDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataSourcesDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSourceDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.DataSourcesDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,53 +511,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SweetDataSourceDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataSourcesDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSourceDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.DataSourcesDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		331042F0208A1C42009A3A2D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SweetDataSourceDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSourceDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SweetDataSourceDemo;
-			};
-			name = Debug;
-		};
-		331042F1208A1C42009A3A2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SweetDataSourceDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSourceDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SweetDataSourceDemo;
 			};
 			name = Release;
 		};
@@ -679,14 +533,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SweetDataSource/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CompoundDataSources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSource;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.CompoundableDataSources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -706,14 +560,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SweetDataSource/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CompoundDataSources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSource;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.CompoundableDataSources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -728,17 +582,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SweetDataSourceTests/Info.plist;
+				INFOPLIST_FILE = CompoundDataSourcesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSourceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.DataSourcesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweetDataSourceDemo.app/SweetDataSourceDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataSourcesDemo.app/DataSourcesDemo";
 			};
 			name = Debug;
 		};
@@ -747,24 +601,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SweetDataSourceTests/Info.plist;
+				INFOPLIST_FILE = CompoundDataSourcesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.SweetDataSourceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.DataSourcesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SweetDataSourceDemo.app/SweetDataSourceDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataSourcesDemo.app/DataSourcesDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		331042BC208A1C40009A3A2D /* Build configuration list for PBXProject "SweetDataSourceDemo" */ = {
+		331042BC208A1C40009A3A2D /* Build configuration list for PBXProject "DataSourcesDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				331042E7208A1C42009A3A2D /* Debug */,
@@ -773,7 +627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		331042E9208A1C42009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSourceDemo" */ = {
+		331042E9208A1C42009A3A2D /* Build configuration list for PBXNativeTarget "DataSourcesDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				331042EA208A1C42009A3A2D /* Debug */,
@@ -782,16 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		331042EF208A1C42009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSourceDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				331042F0208A1C42009A3A2D /* Debug */,
-				331042F1208A1C42009A3A2D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3310430E208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSource" */ = {
+		3310430E208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "CompoundDataSources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3310430F208A1C5F009A3A2D /* Debug */,
@@ -800,7 +645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33104312208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "SweetDataSourceTests" */ = {
+		33104312208A1C5F009A3A2D /* Build configuration list for PBXNativeTarget "CompoundDataSourcesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33104313208A1C5F009A3A2D /* Debug */,
