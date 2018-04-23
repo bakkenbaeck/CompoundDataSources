@@ -1,13 +1,13 @@
 //
 //  StringDataSource.swift
-//  SweetDataSourceDemo
+//  DataSourcesDemo
 //
 //  Created by Ellen Shapiro (Work) on 4/20/18.
 //  Copyright © 2018 Bakken & Bæck. All rights reserved.
 //
 
 import UIKit
-import SweetDataSource
+import CompoundDataSources
 
 class StringDataSource: SingleTypeDataSource<StringCell, String> {
 

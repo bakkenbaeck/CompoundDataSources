@@ -1,16 +1,16 @@
 //
-//  SweetDataSourceTests.swift
-//  SweetDataSourceTests
+//  CompoundDataSourcesTests.swift
+//  CompoundDataSourcesTests
 //
 //  Created by Ellen Shapiro (Work) on 4/20/18.
 //  Copyright © 2018 Bakken & Bæck. All rights reserved.
 //
 
-import SweetDataSource
+import CompoundDataSources
 import UIKit
 import XCTest
 
-@testable import SweetDataSourceDemo
+@testable import DataSourcesDemo
 
 class CompoundDataSourceTests: XCTestCase {
 
