@@ -66,10 +66,6 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
         return dataSource(for: compoundIndexPath.section)
     }
 
-    private func dataSourceIndexPath(for compoundIndexPath: IndexPath) -> IndexPath {
-        return IndexPath(row: compoundIndexPath.row, section: 0)
-    }
-
     private func compoundIndexPath(for dataSource: CompoundableDataSource, at dataSourceIndexPath: IndexPath) -> IndexPath? {
         guard let sectionIndex = dataSources.indices.first(where: { dataSources[$0] === dataSource }) else { return nil }
 
@@ -117,7 +113,7 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return dataSource(for: indexPath)
-            .tableView(tableView, cellForRowAt: dataSourceIndexPath(for: indexPath))
+            .tableView(tableView, cellForRowAt: indexPath.inDataSource)
     }
 
     public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -132,30 +128,30 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
 
     public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return dataSource(for: indexPath)
-            .tableView(tableView, canEditRowAt: dataSourceIndexPath(for: indexPath))
+            .tableView(tableView, canEditRowAt: indexPath.inDataSource)
     }
 
     public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         dataSource(for: indexPath)
-            .tableView(tableView, commit: editingStyle, forRowAt: dataSourceIndexPath(for: indexPath))
+            .tableView(tableView, commit: editingStyle, forRowAt: indexPath.inDataSource)
     }
 
     // MARK: - UITableViewDelegate
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         dataSource(for: indexPath)
-            .tableView(tableView, didSelectRowAt: dataSourceIndexPath(for: indexPath))
+            .tableView(tableView, didSelectRowAt: indexPath.inDataSource)
     }
 
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height = dataSource(for: indexPath).tableView(tableView, heightForRowAt: dataSourceIndexPath(for: indexPath))
+        let height = dataSource(for: indexPath).tableView(tableView, heightForRowAt: indexPath.inDataSource)
 
         return height
     }
 
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return dataSource(for: indexPath)
-            .tableView(tableView, estimatedHeightForRowAt: dataSourceIndexPath(for: indexPath))
+            .tableView(tableView, estimatedHeightForRowAt: indexPath.inDataSource)
     }
 
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -181,29 +177,36 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
     #if os(iOS)
         public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
             return dataSource(for: indexPath)
-                .tableView(tableView, editActionsForRowAt: dataSourceIndexPath(for: indexPath))
+                .tableView(tableView, editActionsForRowAt: indexPath.inDataSource)
         }
 
         @available(iOS 11, *)
         public func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
             return dataSource(for: indexPath)
-                .tableView(tableView, leadingSwipeActionsConfigurationForRowAt: dataSourceIndexPath(for: indexPath))
+                .tableView(tableView, leadingSwipeActionsConfigurationForRowAt: indexPath.inDataSource)
         }
 
         @available(iOS 11, *)
         public func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
             return dataSource(for: indexPath)
-                .tableView(tableView, trailingSwipeActionsConfigurationForRowAt: dataSourceIndexPath(for: indexPath))
+                .tableView(tableView, trailingSwipeActionsConfigurationForRowAt: indexPath.inDataSource)
         }
 
         public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
             return dataSource(for: indexPath)
-                .tableView(tableView, editingStyleForRowAt: dataSourceIndexPath(for: indexPath))
+                .tableView(tableView, editingStyleForRowAt: indexPath.inDataSource)
         }
 
         public func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
             return dataSource(for: indexPath)
-                .tableView(tableView, titleForDeleteConfirmationButtonForRowAt: dataSourceIndexPath(for: indexPath))
+                .tableView(tableView, titleForDeleteConfirmationButtonForRowAt: indexPath.inDataSource)
         }
     #endif
+}
+
+fileprivate extension IndexPath {
+
+    fileprivate var inDataSource: IndexPath {
+        return IndexPath(row: self.row, section: 0)
+    }
 }
