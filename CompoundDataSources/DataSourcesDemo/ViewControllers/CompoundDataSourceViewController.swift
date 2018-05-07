@@ -9,14 +9,7 @@
 import CompoundDataSources
 import UIKit
 
-class CompoundDataSourceViewController: UIViewController {
-
-    private lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-
-        return tableView
-    }()
+class CompoundDataSourceViewController: UITableViewController {
 
     private var stringDataSource: StringDataSource!
     private var intDataSource: IntDataSource!
@@ -28,15 +21,6 @@ class CompoundDataSourceViewController: UIViewController {
         if #available(iOS 11, *) {
             navigationController?.navigationBar.prefersLargeTitles = false
         }
-
-        view.addSubview(tableView)
-
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-        ])
 
         stringDataSource = StringDataSource(tableView: tableView, selectionAction: { [weak self] string in
             self?.compoundDataSource.deselectSelectedRow()
