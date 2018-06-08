@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "331042F6208A1C5F009A3A2D"
-               BuildableName = "CompoundableDataSources.framework"
-               BlueprintName = "CompoundableDataSources"
+               BuildableName = "CompoundDataSources.framework"
+               BlueprintName = "CompoundDataSources"
                ReferencedContainer = "container:DataSourcesDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,9 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "331042FE208A1C5F009A3A2D"
+               BuildableName = "CompoundDataSourcesTests.xctest"
+               BlueprintName = "CompoundDataSourcesTests"
+               ReferencedContainer = "container:DataSourcesDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "331042F6208A1C5F009A3A2D"
+            BuildableName = "CompoundDataSources.framework"
+            BlueprintName = "CompoundDataSources"
+            ReferencedContainer = "container:DataSourcesDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -46,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "331042F6208A1C5F009A3A2D"
-            BuildableName = "CompoundableDataSources.framework"
-            BlueprintName = "CompoundableDataSources"
+            BuildableName = "CompoundDataSources.framework"
+            BlueprintName = "CompoundDataSources"
             ReferencedContainer = "container:DataSourcesDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +84,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "331042F6208A1C5F009A3A2D"
-            BuildableName = "CompoundableDataSources.framework"
-            BlueprintName = "CompoundableDataSources"
+            BuildableName = "CompoundDataSources.framework"
+            BlueprintName = "CompoundDataSources"
             ReferencedContainer = "container:DataSourcesDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

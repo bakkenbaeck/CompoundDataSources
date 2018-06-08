@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StringCell.swift
 //  DataSourcesDemo
 //
 //  Created by Ellen Shapiro (Work) on 4/20/18.
@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import CompoundDataSources
 
-class ViewController: UIViewController {
+class StringCell: UITableViewCell {
 
-    @IBOutlet private var tableView: UITableView!
-
+    @IBOutlet var titleLabel: UILabel!
 }
-

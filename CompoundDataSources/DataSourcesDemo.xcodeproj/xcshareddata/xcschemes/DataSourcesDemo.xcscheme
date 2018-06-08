@@ -20,6 +20,20 @@
                ReferencedContainer = "container:DataSourcesDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "331042F6208A1C5F009A3A2D"
+               BuildableName = "CompoundDataSources.framework"
+               BlueprintName = "CompoundDataSources"
+               ReferencedContainer = "container:DataSourcesDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
